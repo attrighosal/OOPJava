@@ -1,5 +1,7 @@
 package Doubts;
 
+import java.util.Arrays;
+
 public class MergeArray {
 
   public static int[] mergeArray(int[] arr1, int[] arr2) {
@@ -12,6 +14,7 @@ public class MergeArray {
     for (int i=0; i<n2; i++) {
       arr3[n1+i] = arr2[i];
     }
+    Arrays.sort(arr3);
     return arr3;
   }
 
